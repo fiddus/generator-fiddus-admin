@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="<%= angularModuleName %>">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <!--<link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon">-->
+        <title>{{ projectName }}</title>
+        <!-- build:css css/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css css/styles.css -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- endbuild -->
+    </head>
+
+    <body>
+        <div ui-view></div>
+
+        <!-- build:js js/others.js -->
+        <!-- endbuild -->
+
+        <!-- build:js js/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js js/app.js -->
+        <!-- Main App File-->
+        <script src="app/app.js"></script>
+
+        <!-- Routes Files -->
+        <script src="app/home/homeIndex.js"></script>
+
+        <!-- Controller Files-->
+        <script src="app/home/homeCtrl.js"></script>
+
+        <!-- Template cache path-->
+        <script src="js/templates.js"></script>
+
+        <!-- Live reload -->
+        <script src="//localhost:35729/livereload.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
