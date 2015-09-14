@@ -7,7 +7,7 @@
     "description": "Client side of <%= projectName %>",
     "main": "app.js",
     "moduleType": [
-    "   node"
+        "node"
     ],
     "keywords": [
         "<%= projectKeyWords %>"
@@ -16,6 +16,7 @@
     "homepage": "https://github.com/<%= projectRepo %>#readme",
     "dependencies": {
         "angular": "~1.4.5",
+        "angular-mocks": "~1.4.5",
         "angular-ui-router": "~0.2.15",
         "font-awesome": "fontawesome#~4.4.0",
         "normalize-css": "normalize.css#~3.0.3",

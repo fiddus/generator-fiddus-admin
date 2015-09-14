@@ -52,9 +52,11 @@
         "karma-coverage": "^0.5.2",
         "karma-mocha": "^0.2.0",
         "karma-phantomjs-launcher": "^0.2.1",
+        "karma-sinon": "^1.0.4",
         "load-grunt-tasks": "^3.2.0",
         "mocha": "^2.3.2",
         "phantomjs": "^1.9.18",
+        "sinon": "^1.16.1",
         "time-grunt": "^1.2.1"
     },
     "dependencies": {

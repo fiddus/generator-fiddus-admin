@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                     'dist/**/*'
                 ]
             },
-            all: ['./**/*.js']
+            all: ['<%%= config.app %>/**/*.js']
         },
 
 
@@ -169,6 +169,12 @@ module.exports = function (grunt) {
                         expand: true,
                         cwd: '<%%= config.app %>/',
                         src: ['bower_components/**'],
+                        dest: '<%%= config.buildPath %>/'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%%= config.app %>/',
+                        src: ['components/**'],
                         dest: '<%%= config.buildPath %>/'
                     }
                 ]
@@ -345,10 +351,7 @@ module.exports = function (grunt) {
         // Client tests
         karma: {
             unit: {
-                options: {
-                    files: ['./app/**/*Tests.js']
-                },
-                configFile: './karma.conf.js',
+                configFile: '<%%= config.app %>/karma.conf.js',
                 autoWatch: false,
                 singleRun: true
             }

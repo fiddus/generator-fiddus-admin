@@ -20,7 +20,9 @@
     // Main module
     angular.module('<%= angularModuleName %>', [
         'ui.router',
-        'templates-fiddus'
+        'templates-fiddus',
+        'constants-api-url',
+        'factory-api-requests'
     ])
         .config(routesApp)
         .run(runApp);

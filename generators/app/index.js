@@ -19,7 +19,7 @@
                     type: 'input',
                     name: 'projectName',
                     message: 'What is your project\'s name?',
-                    default: this.appname
+                    default: this.appname.replace(/\s+/g, '-')
                 }, {
                     type: 'input',
                     name: 'organization',
@@ -37,7 +37,7 @@
                     type: 'input',
                     name: 'projectRepo',
                     message: 'Enter your project repository:',
-                    default: (this.config.get('organization') || 'fiddus') + '/' + this.appname
+                    default: (this.config.get('organization') || 'fiddus') + '/' + this.appname.replace(/\s+/g, '-')
                 }, {
                     type: 'input',
                     name: 'author',

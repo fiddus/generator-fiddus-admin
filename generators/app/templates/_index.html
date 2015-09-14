@@ -26,6 +26,7 @@
         <!-- build:js js/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-mocks/angular-mocks.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
@@ -34,16 +35,22 @@
         <!-- Main App File-->
         <script src="app/app.js"></script>
 
+        <!-- Constants Files -->
+        <script src="components/constants/api.js"></script>
+
         <!-- Routes Files -->
         <script src="app/home/homeIndex.js"></script>
 
         <!-- Controller Files-->
         <script src="app/home/homeCtrl.js"></script>
 
-        <!-- Template cache path-->
+        <!-- Factories Files -->
+        <script src="components/factories/apiRequests/apiRequests.js"></script>
+
+        <!-- Template cache file -->
         <script src="js/templates.js"></script>
 
-        <!-- Live reload -->
+        <!-- Live Reload - Has content just on development -->
         <script src="//localhost:35729/livereload.js"></script>
         <!-- endbuild -->
     </body>
