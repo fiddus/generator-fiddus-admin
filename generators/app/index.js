@@ -11,7 +11,7 @@
 
             // Have Yeoman greet the user.
             this.log(yosay(
-                'Welcome to the impeccable ' + chalk.red('FiddusClient') + ' generator!'
+                'Welcome to the impeccable ' + chalk.red('Fiddus Admin') + ' generator!'
             ));
 
             var prompts = [
